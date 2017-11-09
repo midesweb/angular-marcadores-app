@@ -1,0 +1,15 @@
+<p>
+  Este documento se revisó hace {{ date | amTimeAgo:true }}
+</p>
+<p *ngIf="seccion">
+  Seccion: {{ seccion }}
+</p>
+
+<ul>
+  <li><a [routerLink]="['/ayuda', 'seccion1']">Sección 1</a></li>
+  <li><a [routerLink]="['/ayuda', 'otra']">Otra ayuda</a></li>
+</ul>
+
+<p>
+  {{ momentNativo }}
+</p>

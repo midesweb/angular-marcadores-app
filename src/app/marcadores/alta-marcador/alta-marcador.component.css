@@ -1,0 +1,25 @@
+span {
+  display: inline-block;
+  width: 80px;
+}
+input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  
+}
+input.ng-valid {
+  border-left: 4px solid #0f0;
+}
+input.ng-invalid.ng-touched {
+  border-left: 4px solid #f00;
+}
+i {
+  display: block;
+  font-size: 0.9em;
+  margin: 3px 0 0 0;
+  color: #999;
+}
+.error {
+  color: red;
+}

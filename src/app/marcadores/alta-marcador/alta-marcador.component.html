@@ -1,0 +1,41 @@
+<h2>Alta de marcador</h2>
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <p>
+    <span>Titulo</span>
+    <input 
+      id="titulo"
+      type="text"  
+      name="titulo" 
+      [ngModel]="marcador.titulo"
+      required
+      minlength="3"
+      #titulo="ngModel"
+    >
+    <i *ngIf="!titulo.valid && titulo.touched">El título debe tener al menos 3 caracteres</i>
+  </p>
+  <p>
+    <span>URL</span>
+    <input 
+      type="text" 
+      name="url" 
+      [ngModel]="marcador.url"
+      required
+      pattern="https?://.+"
+    >
+  </p>
+  <p>
+    <span>Tipo de Marcador</span>
+    <select
+      name="idTipo" 
+      [ngModel]="tipoMarcadorDefault" 
+      required>
+      <option *ngFor="let tipo of tipos" value="{{tipo.id}}">{{tipo.tipo}}</option>
+    </select>
+  </p>
+  <p>
+    <button [disabled]="!f.valid">Guardar</button>
+  </p>
+</form>
+
+<div *ngIf="error" class="error">{{ error }}</div>
+<app-listado-marcadores></app-listado-marcadores>

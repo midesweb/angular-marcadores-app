@@ -1,0 +1,16 @@
+<h2>Listado</h2>
+
+<app-item-marcador 
+  *ngFor="let marcador of marcadores; let i = index"
+  [marcador]="marcador" 
+  [i]="i"
+  (borrarItem)="onBorrarMarcador($event)"
+></app-item-marcador>
+
+<div *ngIf="error">
+  {{ error }}
+</div>
+
+<div *ngIf="mensaje">
+  {{ mensaje }}
+</div>

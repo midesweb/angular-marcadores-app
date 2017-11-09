@@ -1,0 +1,8 @@
+<div class="itemcontenido">
+  <h3>Marcador {{ i }} <span>-Tipo: {{marcador.idTipo}}-</span></h3>
+  <p><a href="{{marcador.url}}">{{ marcador.titulo}}</a></p>
+</div>
+<div class="acciones">
+  <button (click)="onBorrar()" class="btn btn-danger">X</button>
+  <button (click)="onEditar()" class="btn btn-primary">E</button>
+</div>

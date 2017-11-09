@@ -1,0 +1,28 @@
+:host {
+  background-color: rgb(225, 241, 243);
+  border: 1px solid #ccd;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+span {
+  font-size: .8em;
+  color: #999;
+}
+div.itemcontenido {
+  width: 74%;
+}
+div.acciones {
+  width: 25%;
+}
+h3 {
+  font-size: 1.2em;
+}
+button {
+  font-size: 1em;
+}
+p {
+  font-size: 1.4em;
+}

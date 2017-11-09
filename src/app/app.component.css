@@ -1,0 +1,35 @@
+nav {
+  font-weight: bold;
+  background-color: #a7d2e4;  
+  padding: 9px;
+  border-radius: 5px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin: 0;
+  padding:10px;
+  background-color: #e5e5e5;
+  display: inline-block;
+  border-radius: 4px;
+}
+.activo {
+  background-color: #22afe7;
+}
+.activo a {
+  color: #fff;
+}
+nav{
+  display: flex;
+  align-items: center;
+}
+span.userLogin {
+  display: block;
+  text-align: right;
+  flex-grow: 1;
+}
+.pointer {
+  cursor: pointer;
+}
