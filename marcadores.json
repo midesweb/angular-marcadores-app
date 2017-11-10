@@ -1,0 +1,44 @@
+{
+  "tipos": [
+    {
+      "id": 0,
+      "tipo": "Indefinido"
+    },
+    {
+      "id": 1,
+      "tipo": "Público"
+    },
+    {
+      "id": 2,
+      "tipo": "Privado"
+    },
+    {
+      "id": 3,
+      "tipo": "Oculto"
+    },
+    {
+      "id": 4,
+      "tipo": "Promocionado"
+    }
+  ],
+  "marcadores": [
+    {
+      "titulo": "test... rreeereree",
+      "url": "http://www",
+      "idTipo": 0,
+      "id": 3
+    },
+    {
+      "titulo": "test...",
+      "url": "http://www",
+      "idTipo": 0,
+      "id": 4
+    },
+    {
+      "titulo": "test...",
+      "url": "http://www",
+      "idTipo": 0,
+      "id": 5
+    }
+  ]
+}
